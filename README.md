@@ -105,30 +105,30 @@ Cake
 
 ## 配置文件
 
-### 命名空间:XiaoFeng.DouYin.Model
+### 命名空间:XiaoFeng.KuaShou.Model
 
 ### 类名:OpenApiOptions
 
-### 配置文件路径:/Config/DouYinOpenApiConfig.json
+### 配置文件路径:/Config/KuaiShouOpenApiConfig.json
 
 ### 配置文件内容
 
 ```json
 {
-  "ClientKey"/*应用唯一标识*/: "",
-  "ClientSecret"/*应用唯一标识对应的密钥*/: ""
+  "AppId"/*应用唯一标识*/: "",
+  "AppSecret"/*应用唯一标识对应的密钥*/: ""
 }
 ```
 
 ### 配置模型
 
 ```csharp
-namespace XiaoFeng.DouYin.Model
+namespace XiaoFeng.KuaiShou.Model
 {
     /// <summary>
     /// OpenAPI配置
     /// </summary>
-    [ConfigFile("Config/DouYinOpenApiConfig.json", 0, "FAYELF-CONFIG-DOUYIN-OPENAPI-CONFIG", ConfigFormat.Json)]
+    [ConfigFile("Config/KuaiShouOpenApiConfig.json", 0, "FAYELF-CONFIG-KUAISHOU-OPENAPI-CONFIG", ConfigFormat.Json)]
     public class OpenApiOptions : ConfigSet<OpenApiOptions>
     {
         #region 构造器
@@ -146,12 +146,12 @@ namespace XiaoFeng.DouYin.Model
         /// 应用唯一标识
         /// </summary>
         [Description("应用唯一标识")]
-        public string ClientKey { get; set; }
+        public string AppKey { get; set; }
         /// <summary>
         /// 应用唯一标识对应的密钥
         /// </summary>
         [Description("应用唯一标识对应的密钥")]
-        public string ClientSecret { get; set; }
+        public string AppSecret { get; set; }
         #endregion
 
         #region 方法
@@ -173,14 +173,6 @@ var AccessTokenModel = await api.GetAccessTokenAsync("code码");
 //刷新Refresh_Token
 var RefreshAccessTokenModel = await api.RefreshRefreshAccessTokenAsync("refreshToken");
 
-//生成 client_token
-var AccessTokenModela = await api.CreateClientTokenAsync();
-
-//刷新 access_token
-var AccessTokenModelb = await api.RefreshAccessTokenAsync("refreshToken");
-
-//获取 OpenTicket
-var TicketModel = await api.GetOpenTicketAsync("ClientToken");
 
 //其它接口都是在api下不再一一列出.
 

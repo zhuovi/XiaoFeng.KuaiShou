@@ -19,7 +19,7 @@ namespace XiaoFeng.KuaiShou.Model
     /// <summary>
     /// OpenAPI配置
     /// </summary>
-    [ConfigFile("Config/KuaiShouOpenApiConfig.json", 0, "FAYELF-CONFIG-DOUYIN-OPENAPI-CONFIG", ConfigFormat.Json)]
+    [ConfigFile("Config/KuaiShouOpenApiConfig.json", 0, "FAYELF-CONFIG-KUAISHOU-OPENAPI-CONFIG", ConfigFormat.Json)]
     public class OpenApiOptions : ConfigSet<OpenApiOptions>
     {
         #region 构造器
