@@ -1,14 +1,14 @@
-# XiaoFeng.DouYin
+# XiaoFeng.KuaiShou
 
 ![fayelf](https://user-images.githubusercontent.com/16105174/197918392-29d40971-a8a2-4be4-ac17-323f1d0bed82.png)
 
-![GitHub top language](https://img.shields.io/github/languages/top/zhuovi/xiaofeng.douyin?logo=github)
-![GitHub License](https://img.shields.io/github/license/zhuovi/xiaofeng.douyin?logo=github)
-![Nuget Downloads](https://img.shields.io/nuget/dt/xiaofeng.douyin?logo=nuget)
-![Nuget](https://img.shields.io/nuget/v/xiaofeng.douyin?logo=nuget)
-![Nuget (with prereleases)](https://img.shields.io/nuget/vpre/xiaofeng.douyin?label=dev%20nuget&logo=nuget)
+![GitHub top language](https://img.shields.io/github/languages/top/zhuovi/xiaofeng.kuaishou?logo=github)
+![GitHub License](https://img.shields.io/github/license/zhuovi/xiaofeng.kuaishou?logo=github)
+![Nuget Downloads](https://img.shields.io/nuget/dt/xiaofeng.kuaishou?logo=nuget)
+![Nuget](https://img.shields.io/nuget/v/xiaofeng.kuaishou?logo=nuget)
+![Nuget (with prereleases)](https://img.shields.io/nuget/vpre/xiaofeng.kuaishou?label=dev%20nuget&logo=nuget)
 
-Nuget：XiaoFeng.DouYin
+Nuget：XiaoFeng.KuaiShou
 
 | QQ群号 | QQ群 | 公众号 |
 | :----:| :----: | :----: |
@@ -22,50 +22,50 @@ Nuget：XiaoFeng.DouYin
 抖音开放平台SDK
 
 
-## XiaoFeng.DouYin
+## XiaoFeng.KuaiShou
 
-XiaoFeng generator with [XiaoFeng](https://github.com/zhuovi/XiaoFeng.DouYin).
+XiaoFeng.KuaiShou generator with [XiaoFeng](https://github.com/zhuovi/XiaoFeng.KuaiShou).
 
 ## Install
 
 .NET CLI
 
 ```
-$ dotnet add package XiaoFeng.DouYin --version 1.0.0
+$ dotnet add package XiaoFeng.KuaiShou --version 1.0.0
 ```
 
 Package Manager
 
 ```
-PM> Install-Package XiaoFeng.DouYin -Version 1.0.0
+PM> Install-Package XiaoFeng.KuaiShou -Version 1.0.0
 ```
 
 PackageReference
 
 ```
-<PackageReference Include="XiaoFeng.DouYin" Version="1.0.0" />
+<PackageReference Include="XiaoFeng.KuaiShou" Version="1.0.0" />
 ```
 
 Paket CLI
 
 ```
-> paket add XiaoFeng.DouYin --version 1.0.0
+> paket add XiaoFeng.KuaiShou --version 1.0.0
 ```
 
 Script & Interactive
 
 ```
-> #r "nuget: XiaoFeng.DouYin, 1.0.0"
+> #r "nuget: XiaoFeng.KuaiShou, 1.0.0"
 ```
 
 Cake
 
 ```
 // Install XiaoFeng as a Cake Addin
-#addin nuget:?package=XiaoFeng.DouYin&version=1.0.0
+#addin nuget:?package=XiaoFeng.KuaiShou&version=1.0.0
 
 // Install XiaoFeng as a Cake Tool
-#tool nuget:?package=XiaoFeng.DouYin&version=1.0.0
+#tool nuget:?package=XiaoFeng.KuaiShou&version=1.0.0
 ```
 
 
@@ -97,6 +97,7 @@ Cake
 | XiaoFeng.Mqtt | XiaoFeng.Mqtt | :white_check_mark: | MQTT协议 | XiaoFeng.Mqtt中间件,支持.NET框架、.NET内核和.NET标准库,一种非常方便操作的客户端工具。实现了MQTT客户端，MQTT服务端,同时支持TCP，WebSocket连接。支持协议版本3.0.0,3.1.0,5.0.0。 |
 | XiaoFeng.Modbus | XiaoFeng.Modbus | :white_check_mark: | MODBUS协议 | MODBUS协议,支持RTU、ASCII、TCP三种方式进行通信，自动离线保存服务端数据 |
 | XiaoFeng.DouYin | XiaoFeng.DouYin | :white_check_mark: | 抖音开放平台SDK | 抖音开放平台接口 |
+| XiaoFeng.KuaiShou | XiaoFeng.KuaiShou | :white_check_mark: | 快手开放平台SDK | 快手开放平台 |
 | XiaoFeng.Mvc.AdminWinDesk | XiaoFeng.Mvc.AdminWinDesk | :white_check_mark: | XiaoFeng.Mvc后台皮肤 | 模仿windows桌面后台皮肤 |
 | FayElf.Cube.Blog | FayElf.Cube.Blog | :white_check_mark: | XiaoFeng.Mvc开发的技术博客 | 使用低代码开发框架（XiaoFeng.Mvc）+Windows后台皮肤(XiaoFeng.Mvc.AdminWinDesk)，开发的一个博客平台。 |
 
