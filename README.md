@@ -24,7 +24,7 @@ Nuget：XiaoFeng.KuaiShou
 
 ## XiaoFeng.KuaiShou
 
-XiaoFeng.KuaiShou generator with [XiaoFeng](https://github.com/zhuovi/XiaoFeng.KuaiShou).
+XiaoFeng.KuaiShou generator with [XiaoFeng.KuaiShou](https://github.com/zhuovi/XiaoFeng.KuaiShou).
 
 ## Install
 
@@ -61,10 +61,10 @@ Script & Interactive
 Cake
 
 ```
-// Install XiaoFeng as a Cake Addin
+// Install XiaoFeng.KuaiShou as a Cake Addin
 #addin nuget:?package=XiaoFeng.KuaiShou&version=1.0.0
 
-// Install XiaoFeng as a Cake Tool
+// Install XiaoFeng.KuaiShou as a Cake Tool
 #tool nuget:?package=XiaoFeng.KuaiShou&version=1.0.0
 ```
 
