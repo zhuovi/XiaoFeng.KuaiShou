@@ -15,7 +15,7 @@ Nuget：XiaoFeng.KuaiShou
 | 748408911  | ![QQ 群](https://user-images.githubusercontent.com/16105174/198058269-0ea5928c-a2fc-4049-86da-cca2249229ae.png) | ![畅聊了个科技](https://user-images.githubusercontent.com/16105174/198059698-adbf29c3-60c2-4c76-b894-21793b40cf34.jpg) |
 
 
-源码： https://github.com/zhuovi/xiaofeng
+源码： https://github.com/zhuovi/xiaofeng.kuaishou
 
 教程： https://www.eelf.cn
 
@@ -146,7 +146,7 @@ namespace XiaoFeng.KuaiShou.Model
         /// 应用唯一标识
         /// </summary>
         [Description("应用唯一标识")]
-        public string AppKey { get; set; }
+        public string AppId { get; set; }
         /// <summary>
         /// 应用唯一标识对应的密钥
         /// </summary>
@@ -173,6 +173,8 @@ var AccessTokenModel = await api.GetAccessTokenAsync("code码");
 //刷新Refresh_Token
 var RefreshAccessTokenModel = await api.RefreshRefreshAccessTokenAsync("refreshToken");
 
+//公开信息
+var user = await api.GetUserInfoAsync("accessToken");
 
 //其它接口都是在api下不再一一列出.
 
